@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Rokkitt" rel="stylesheet">
+    <link rel="icon" type="text/css" href="img/iconlogo.png">
+    <title>RPB News</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top " style="background-color: #3b5998;>
+  <a class="navbar-brand" href="#"><img class="logoimg" src="img/iconlogo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav nav ">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cadastrer">Cadastrar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contato">Contate-nos</a>
+      </li>
+      <li class="nav-ite" id="redes">
+        <a class="nav-lik" href="https://www.facebook.com/RPB-News-273983056514509/"><img id="size" src="img/nav/face.png"></a>
+      </li>
+      <li class="nav-ite" id="redes">
+        <a class="nav-lik" href="https://www.instagram.com/rpbnews/"><img id="size" src="img/nav/insta.png"></a>
+      </li>
+      <li class="nav-ite" id="redes">
+        <a class="nav-lik" href="https://twitter.com/NewsRpb?lang=pt-br"><img id="size" src="img/nav/twitter.png"></a>
+      </li>
+      <li class="nav-ite sumiu" >
+        <a class="nav-lik" href="https://www.facebook.com/RPB-News-273983056514509/"><img id="size" src="img/nav/face.png"></a>
+        <a class="nav-lik" href="https://twitter.com/NewsRpb?lang=pt-br"><img id="size" src="img/nav/twitter.png"></a>
+        <a class="nav-lik" href="https://www.instagram.com/rpbnews/"><img id="size" src="img/nav/insta.png"></a>
+        
+      </li>  
+      <li class="nav-ite sumiu">
+        <a class="nav-lik" href="#"><br></a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+	
+<section id="home">
+
+	<div class="container">
+		
+		<div class="row" id="cadastrarh">						
+				
+			<a class="linkhome" href="#cadastrer"> <h1>Cadastrar</h1></a>			
+
+		</div>
+
+		<div class="row" id="contatrenosh">						
+				
+			<a class="linkhome" href="#contato"> <h1>Contate-nos</h1></a>			
+
+		</div>
+
+		<div class="row" id="RPB">            					
+				
+			<h1>NOTÍCIAS GRATUITAS NAS REDES SOCIAIS É AQUI!</h1>	
+                              
+		</div>
+
+        <div class="row" id="lorem">
+
+            <div class="col-md-8">                           
+                
+                <p class="textinho">RPB News é uma plataforma de envio de notícias via <b>Facebook, Instagram, Twitter, E-mail e WhatsApp</b>. Todo conteúdo é passado de forma rápida e 100% segura. É simples: apenas selecione as notícias que deseja receber, as fontes mais confiáveis e cadastre-se inserindo o usuário ou número (WhatsApp) das redes sociais que escolheu...tudo feito! Você receberá conteúdos interessantes na palma da sua mão, em tempo real e de forma <b>gratuita</b>.</p>
+
+            </div>
+
+        </div>
+
+	</div>
+
+</section>
+
+<section class="videopage">
+	
+	 <h1 class="titulovideo">Revista povo brasileiro</h1>
+
+ 	 <center><iframe class="video" src="https://www.youtube.com/embed/xAZspzdUnLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+</section>
+
+<hr id="cadastrer">
+
+<form method="post" action="php/cadastro.php" onsubmit="return confirmacao()"> 
+    <section id="redes">
+        
+        <h1 class="titulosocial">Redes sociais de interesse</h1>
+        <p class="subrede">Selecione uma das redes sociais onde quer receber as notícias</p>
+            <div class="row"  id="start">
+                <div class="col-md-2 text-center">
+                    <label title="WhatsAPP">
+                        <input type="radio" name="rede_sociais[]" value="WhatsAPP" />
+                        <img id="chekin"  src="img/wpp.png" />
+                        
+                    </label>
+                </div>
+                <div class="col-md-2  text-center">
+                    <label  title="Twitter">
+                        <input type="radio" name="rede_sociais[]" value="Twitter" />
+                        <img  id="chekin" src="img/twitter.png" />
+                        
+                    </label>
+                </div>
+                <div class="col-md-2 text-center">
+                    <label  title="Instagram">
+                        <input type="radio" name="rede_sociais[]" value="Instagram" />
+                        <img  id="chekin"  src="img/insta.png" />
+                        
+                    </label>
+                </div>
+                <div class="col-md-2 text-center">
+                    <label  title="E-mail">
+                        <input type="radio" name="rede_sociais[]" value="E-mail" />
+                        <img  id="chekin" src="img/google.png" />
+                        
+                    </label>
+                </div>
+                <div class="col-md-2 text-center">
+                    <label  title="Facebook"> 
+                        <input type="radio" name="rede_sociais[]" value="Facebook" />
+                        <img  id="chekin"" src="img/face.png" />
+                       
+                    </label>
+                </div>
+            </div>
+    </section>
+    <hr id="noticias">
+    <section id="noticias">    
+        <h1 class="titulosocial">Notícias de interesse</h1>
+        <p class="subrede">Selecione as notícias que quer receber</p>
+        <div class="row" id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Politica">
+                    <img id="chekin" src="img/notícias/parlamento.png" />
+                    <input type="checkbox" name="noticias[]" value="Politica" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Economia">
+                    <img  id="chekin" src="img/notícias/money.png" />
+                    <input type="checkbox" name="noticias[]" value="Economia" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Viagem">
+                    <img  id="chekin" src="img/notícias/map.png" />
+                    <input type="checkbox" name="noticias[]" value="Viagem" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Carros">
+                    <img  id="chekin" src="img/notícias/car.png" />
+                    <input type="checkbox" name="noticias[]" value="Carros" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Cultura">
+                    <img  id="chekin" src="img/notícias/people.png" />
+                    <input type="checkbox" name="noticias[]" value="Cultura" />
+                </label>
+            </div>
+        </div>
+        <div class="row"  id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Medicina">
+                    <img id="chekin"  src="img/notícias/heart.png" />
+                    <input type="checkbox" name="noticias[]" value="Medicina" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Moda">
+                    <img  id="chekin" src="img/notícias/dress.png" />
+                    <input type="checkbox" name="noticias[]" value="Moda" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="PET">
+                    <img  id="chekin" src="img/notícias/dog.png" />
+                    <input type="checkbox" name="noticias[]" value="Mundo Pet" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Marketing">
+                    <img  id="chekin" src="img/notícias/pencil.png" />
+                    <input type="checkbox" name="noticias[]" value="Marketing" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Gastronomia">
+                    <img  id="chekin" src="img/notícias/food.png" />
+                    <input type="checkbox" name="noticias[]" value="Gastronomia" />
+                </label>
+            </div>
+        </div>
+        <div class="row" id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Ciencia e Tecnologia">
+                    <img id="chekin"  src="img/notícias/tube.png" />
+                    <input type="checkbox" name="noticias[]" value="Ciencia e Tecnologia" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Educacao">
+                    <img  id="chekin" src="img/notícias/hat.png" />
+                    <input type="checkbox" name="noticias[]" value="Educacao" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="GEEK">
+                    <img  id="chekin" src="img/notícias/saber.png" />
+                    <input type="checkbox" name="noticias[]" value="Cultura Geek" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Curiosidades">
+                    <img  id="chekin" src="img/notícias/lupa.png" />
+                    <input type="checkbox" name="noticias[]" value="Curiosidades" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Esoterico">
+                    <img  id="chekin" src="img/notícias/moon.png" />
+                    <input type="checkbox" name="noticias[]" value="Esoterico" />
+                </label>
+            </div>
+        </div>
+        <div class="row" id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Mundo">
+                    <img id="chekin"  src="img/notícias/earth.png" />
+                    <input type="checkbox" name="noticias[]" value="Mundo" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Esporte">
+                    <img  id="chekin" src="img/notícias/soccer.png" />
+                    <input type="checkbox" name="noticias[]" value="Esportes" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Promocoes">
+                    <img  id="chekin" src="img/notícias/porcento.png" />
+                    <input type="checkbox" name="noticias[]" value="Promoções" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Entretenimento">
+                    <img  id="chekin" src="img/notícias/entretenimento.png" />
+                    <input type="checkbox" name="noticias[]" value="entretenimento" />
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkbox" title="Emprego e Concurso">
+                    <img  id="chekin" src="img/notícias/work.png" />
+                    <input type="checkbox" name="noticias[]" value="Emprego e Concurso" />
+                </label>
+            </div>
+        </div>
+    </section>
+    <hr id="noticias">
+    <section id="noticias">
+        <h1 class="titulosocial">Subtítulos</h1>
+        <p class="subrede">Exemplos de assuntos que serão abordados dentro dos seus interesses</p>
+        <div class="row"  id="startt">
+            <div class="col-md-2 text-center">                        
+                <img class="image-checkboxx" id="chekinn"  src="img/sub/parlamento.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Entrevistas</li>
+                    <li class="subrede2 text-center">Pesquisas</li>
+                    <li class="subrede2 text-center">Comparativos</li>                                
+                </ul>                           
+            </div>
+            <div class="col-md-2  text-center">                        
+                <img class="image-checkboxx" id="chekinn" src="img/sub/money.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Sua empresa</li>
+                    <li class="subrede2 text-center">MEI</li>
+                    <li class="subrede2 text-center">Simples nacional</li>
+                    <li class="subrede2 text-center">Startup</li>                                
+                    <li class="subrede2 text-center">Negócios</li>
+                    <li class="subrede2 text-center">Seu dinheiro</li>
+                </ul>                             
+            </div>
+            <div class="col-md-2 text-center">                        
+                <img class="image-checkboxx" id="chekinn"  src="img/sub/people.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Literatura</li>
+                    <li class="subrede2 text-center">Teatro</li>                                 
+                </ul>                             
+            </div>
+            <div class="col-md-2 text-center">                        
+                <img class="image-checkboxx" id="chekinn" src="img/sub/hat.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Guia do estudante</li>
+                    <li class="subrede2 text-center">Enem</li>                                 
+                </ul>                            
+            </div>
+            <div class="col-md-2 text-center">                        
+                <img class="image-checkboxx" id="chekinn" src="img/sub/heart.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Bem estar</li>
+                    <li class="subrede2 text-center">Nutrição</li>                                 
+                </ul>                             
+            </div>
+            <div class="col-md-2 text-center">                        
+                <img class="image-checkboxx" id="chekinn" src="img/sub/porcento.png" />
+                <ul class="subinho">
+                    <li class="subrede2 text-center">Peixe Urbano</li>
+                    <li class="subrede2 text-center">Groupon</li>                                 
+                    <li class="subrede2 text-center">Cuponeria</li> 
+                </ul>                             
+            </div>
+        </div>
+    </section>
+    <hr id="noticias">
+    <section id="fontes"> 
+        <h1 class="titulosocial">Fontes</h1>
+        <p class="subrede">Estes são alguns exemplos de fontes que serão enviados</p>  
+        <div class="row"  id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="isto é">
+                    <img width="100%"   src="img/fonter/isto.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Quatro rodas">
+                    <img  width="100%"src="img/fonter/quatro.png" />
+                   
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Conversa Afiada">
+                    <img  width="100%" src="img/fonter/afiada.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="G1">
+                    <img  width="100%" src="img/fonter/g1.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Caras">
+                    <img  width="100%" src="img/fonter/caras.png"/>
+                    
+                </label>
+            </div>
+        </div>
+        <div class="row"  id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Brasil 247">
+                    <img width="100%"  src="img/fonter/247.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Carta capital">
+                    <img  width="100%"src="img/fonter/carta.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Sebrae">
+                    <img  width="100%" src="img/fonter/sebrae.png" />
+                   
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="UOL">
+                    <img  width="100%" src="img/fonter/uol.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Midia Ninja">
+                    <img  width="100%" src="img/fonter/ninja.png" />
+                    
+                </label>
+            </div>
+        </div>
+        <div class="row"  id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Super Interessante">
+                    <img width="100%" src="img/fonter/super.png" />
+                   
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Valor econômico">
+                    <img  width="100%" src="img/fonter/valor.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="BBC">
+                    <img  width="100%" src="img/fonter/bbc.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Le Monde">
+                    <img  width="100%" src="img/fonter/le.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Veja">
+                    <img  width="100%" src="img/fonter/veja.png" />
+                    
+                </label>
+            </div>
+        </div>
+         <div class="row"  id="start">
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Tempero Alternativo">
+                    <img width="100%" src="img/fonter/tempero.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="ESPN">
+                    <img  width="100%" src="img/fonter/espn.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="Olhar Digital">
+                    <img  width="100%" src="img/fonter/olhar.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="placar">
+                    <img  width="100%" src="img/fonter/placar.png" />
+                    
+                </label>
+            </div>
+            <div class="col-md-2 text-center">
+                <label class="image-checkboxxx" title="GNN">
+                    <img  width="100%" src="img/fonter/gnn.png" />
+                    
+                </label>
+            </div>
+        </div>        
+    </section>
+    <section class="sumiu">
+        <h1 class="titulosocial">Redes sociais de interesse</h1>
+        <p class="subrede">Selecione uma das redes sociais onde quer receber as notícias</p>
+        <div class="col-md-2 text-center" id="testando">
+            <label class="imagee-checkbox" title="WhatsAPP">
+                <input type="radio" name="rede_sociais[]" value="WhatsAPP" />
+                <img id="chekin" src="img/wpp.png">
+                
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="imagee-checkbox" title="Twitter">
+                <input type="radio" name="rede_sociais[]" value="Twitter" />
+                <img id="chekin" src="img/twitter.png">
+               
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="imagee-checkbox" title="Instagram">
+                <input type="radio" name="rede_sociais[]" value="Instagram" />
+                <img id="chekin" src="img/insta.png">
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="imagee-checkbox" title="E-mail">
+                <input type="radio" name="rede_sociais[]" value="E-mail" />
+                <img id="chekin" src="img/google.png">
+               
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="imagee-checkbox" title="Facebook">
+                <input type="radio" name="rede_sociais[]" value="Facebook" />
+                <img id="chekin" src="img/face.png">
+                
+            </label>
+        </div>
+    </section>
+    <section class="sumiu">
+        <h1 class="titulosocial">Notícias de interesse</h1>
+        <p class="subrede">Selecione as notícias que quer receber</p>
+        <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="Politica">
+                <img id="chekin" src="img/notícias/parlamento.png" />
+                <input type="checkbox" name="noticias[]" value="Politica" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Economia">
+                <img  id="chekin" src="img/notícias/money.png" />
+                <input type="checkbox" name="noticias[]" value="Economia" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Viagem">
+                <img  id="chekin" src="img/notícias/map.png" />
+                <input type="checkbox" name="noticias[]" value="Viagem" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Carros">
+                <img  id="chekin" src="img/notícias/car.png" />
+                <input type="checkbox" name="noticias[]" value="Carros" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+           <label class="image-checkbox" title="Cultura">
+                <img  id="chekin" src="img/notícias/people.png" />
+                <input type="checkbox" name="noticias[]" value="Cultura" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="Medicina">
+                <img id="chekin"  src="img/notícias/heart.png" />
+                <input type="checkbox" name="noticias[]" value="Medicina" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Moda">
+                <img  id="chekin" src="img/notícias/dress.png" />
+                <input type="checkbox" name="noticias[]" value="Moda" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Mundo Pet">
+                <img  id="chekin" src="img/notícias/dog.png" />
+                <input type="checkbox" name="noticias[]" value="PET" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Marketing">
+                <img  id="chekin" src="img/notícias/pencil.png" />
+                <input type="checkbox" name="noticias[]" value="Marketing" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Gastronomia">
+                <img  id="chekin" src="img/notícias/food.png" />
+                <input type="checkbox" name="noticias[]" value="Gastronomia" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="Ciencia e Tecnologia">
+                <img id="chekin"  src="img/notícias/tube.png" />
+                <input type="checkbox" name="noticias[]" value="Ciencia e Tecnologia" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Educacao">
+                <img  id="chekin" src="img/notícias/hat.png" />
+                <input type="checkbox" name="noticias[]" value="Educacao" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Cultura Geek">
+                <img  id="chekin" src="img/notícias/saber.png" />
+                <input type="checkbox" name="noticias[]" value="GEEK" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="Curiosidades">
+                <img  id="chekin" src="img/notícias/lupa.png" />
+                <input type="checkbox" name="noticias[]" value="Curiosidades" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Esoterico">
+                <img  id="chekin" src="img/notícias/moon.png" />
+                <input type="checkbox" name="noticias[]" value="Esoterico" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="Mundo">
+                <img id="chekin"  src="img/notícias/earth.png" />
+                <input type="checkbox" name="noticias[]" value="Mundo" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Esportes">
+                <img  id="chekin" src="img/notícias/soccer.png" />
+                <input type="checkbox" name="noticias[]" value="Esportes" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Promoções">
+                <img  id="chekin" src="img/notícias/porcento.png" />
+                <input type="checkbox" name="noticias[]" value="Promocoes" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center" id="testando">
+            <label class="image-checkbox" title="entretenimento">
+                <img  id="chekin" src="img/notícias/entretenimento.png" />
+                <input type="checkbox" name="noticias[]" value="entretenimento" />
+            </label>
+        </div>
+         <div class="col-md-2 text-center"id="testando">
+            <label class="image-checkbox" title="Emprego e Concurso">
+                <img  id="chekin" src="img/notícias/work.png" />
+                <input type="checkbox" name="noticias[]" value="Emprego e Concurso" />
+            </label>
+        </div>
+    </section>
+    <section class="sumiu">
+        <h1 class="titulosocial">Subtítulos</h1>
+        <p class="subrede">Exemplos de assuntos que serão abordados dentro dos seus interesses</p>
+        <div class="col-md-2 text-center">                        
+            <img class="image-checkboxx" id="chekinn"  src="img/sub/parlamento.png" />
+            <ul class="subinho">
+                <li class="subreder text-center">Entrevistas</li>
+                <li class="subreder text-center">Pesquisas</li>
+                <li class="subreder text-center">Comparativos</li>                                
+            </ul>                           
+        </div>
+        <div class="col-md-2  text-center">                        
+            <img class="image-checkboxx" id="chekinn" src="img/sub/money.png" />
+            <ul class="subinho">
+                <li class="subreder text-center">Sua empresa</li>
+                <li class="subreder text-center">MEI</li>
+                <li class="subreder text-center">Simples nacional</li>
+                <li class="subreder text-center">Startup</li>                                
+                <li class="subreder text-center">Negócios</li>
+                <li class="subreder text-center">Seu dinheiro</li>
+            </ul>                             
+        </div>
+        <div class="col-md-2 text-center">                        
+            <img class="image-checkboxx" id="chekinn"  src="img/sub/people.png" />
+            <ul class="subinho">
+                <li class="subreder text-center">Literatura</li>
+                <li class="subreder text-center">Teatro</li>                                 
+            </ul>                             
+        </div>
+        <div class="col-md-2 text-center">                        
+            <img class="image-checkboxx" id="chekinn" src="img/sub/hat.png" />
+            <ul class="subinho">
+                <li class="subreder text-center">Guia do estudante</li>
+                <li class="subreder text-center">Enem</li>                                 
+            </ul>                            
+        </div>
+        <div class="col-md-2 text-center">                        
+            <img class="image-checkboxx" id="chekinn" src="img/sub/heart.png" />
+            <ul class="subinho">
+                <li class="subreder text-center">Bem estar</li>
+                <li class="subreder text-center">Nutrição</li>                                 
+            </ul>                             
+        </div>
+        <div class="col-md-2 text-center">                        
+            <img class="image-checkboxx" id="chekinn" src="img/sub/porcento.png" />
+            <ul class="subinho">
+                <li class="subrede text-center">Peixe Urbano</li>
+                <li class="subrede text-center">Groupon</li>                                 
+                <li class="subrede text-center">Cuponeria</li> 
+            </ul>                             
+        </div>
+    </section>
+    <section class="sumiu">
+        <h1 class="titulosocial">Fontes</h1>
+        <p class="subrede">Estes são alguns exemplos de fontes que serão enviados</p>
+
+        
+        <div class="col-md-2 text-center">
+        <label class="image-checkboxxx" id="chekinn" title="isto é">
+                <img width="100%"  src="img/fonter/isto.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" id="chekinn" title="Quatro rodas">
+                <img  width="100%"src="img/fonter/quatro.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Conversa Afiada">
+                <img  width="100%" src="img/fonter/afiada.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="G1">
+                <img  width="100%" src="img/fonter/g1.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Caras">
+                <img  width="100%" src="img/fonter/caras.png"/>
+            </label>
+        </div>
+
+         <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Brasil 247">
+                <img width="100%"  src="img/fonter/247.png" />
+                </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Carta capital">
+                <img  width="100%"src="img/fonter/carta.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Sebrae">
+                <img  width="100%" src="img/fonter/sebrae.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="UOL">
+                <img  width="100%" src="img/fonter/uol.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Midia Ninja">
+                <img  width="100%" src="img/fonter/ninja.png" />
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Super Interessante">
+                <img width="100%" src="img/fonter/super.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Valor econômico">
+                <img  width="100%" src="img/fonter/valor.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="BBC">
+                <img  width="100%" src="img/fonter/bbc.png" />
+               
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Le Monde">
+                <img  width="100%" src="img/fonter/le.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Veja">
+                <img  width="100%" src="img/fonter/veja.png" />
+               
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Tempero Alternativo">
+                <img width="100%" src="img/fonter/tempero.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="ESPN">
+                <img  width="100%" src="img/fonter/espn.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="Olhar Digital">
+                <img  width="100%" src="img/fonter/olhar.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="placar">
+                <img  width="100%" src="img/fonter/placar.png" />
+                
+            </label>
+        </div>
+        <div class="col-md-2 text-center">
+            <label class="image-checkboxxx" id="chekinn" title="GNN">
+                <img  width="100%" src="img/fonter/gnn.png" />
+                
+            </label>
+        </div>
+    </section>
+    <hr>
+    <section id="cadastrar">
+        <div class="container">
+            <h1 class="registrinho" align="center" >Cadastre-se</h1>
+            <p align="center" class="subrede">Preencha suas informações pessoais</p>
+            <div class="row" id="primeiro">
+
+                <div class="col-md-6">
+                                    
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" type="text" name="nome" placeholder="Nome Completo" required="required">     
+                    </p>
+                </div>  
+
+                <div class="col-md-6">
+                                        
+                    <p class="nome" align="center">
+
+                            <input id="assunter2" type="email" name="email" placeholder="E-mail" required="required">
+
+                    </p>
+                </div>
+            </div>  
+
+            <div class="row" id="segundo">
+                                
+                <div class="col-md-3">
+                                        
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" type="text" name="facebook" placeholder="Facebook" >
+                    </p>
+                </div>  
+
+                <div class="col-md-3">
+                                            
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" class="phone_with_ddd" type="text" name="celular" placeholder="Celular" >
+                    </p>
+                </div>  
+
+                <div class="col-md-3">
+                                            
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" type="text" name="twitter" placeholder="Twitter" >
+                    </p>
+                </div>  
+
+                <div class="col-md-3">
+                                            
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" type="text" name="instagram" placeholder="Instagram" >
+                    </p>
+                </div>  
+            </div>
+
+            <div class="row" id="terceiro">
+                                    
+                <div class="col-md-4">
+                                            
+                    <p class="nome" align="center">
+
+                        <input id="assunter2" class="date" type="text" name="date" placeholder="Data de nascimento" required="required" 
+                        >
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <div>                        
+                        <select name="estado" id="assunter4" class="ass3_1" placeholder="Estado" required="required">
+
+                            <option value="" selected disabled >Estado</option>
+                            <option value="Acre ">Acre (AC)</option>
+                            <option value="Alagoas ">Alagoas (AL)</option>
+                            <option value="Amapa ">Amapá (AP)</option>
+                            <option value="Amazonas ">Amazonas (AM)</option>
+                            <option value="Bahia ">Bahia (BA)</option>
+                            <option value="Ceara ">Ceará (CE)</option>
+                            <option value="Distrito_federar ">Distrito Federal (DF)</option>
+                            <option value="Espirito_santo ">Espírito Santo (ES)</option>
+                            <option value="Goias ">Goiás (GO)</option>
+                            <option value="Maranhão ">Maranhão (MA)</option>
+                            <option value="Mato_grosso ">Mato Grosso (MT)</option>
+                            <option value="Mato_grosso_sul ">Mato Grosso do Sul (MS)</option>
+                            <option value="Minas_gerais ">Minas Gerais (MG)</option>
+                            <option value="Para ">Pará (PA) </option>
+                            <option value="Paraiba ">Paraíba (PB)</option>
+                            <option value="Parana ">Paraná (PR)</option>
+                            <option value="Pernambuco">Pernambuco (PE)</option>
+                            <option value="Piaui ">Piauí (PI)</option>
+                            <option value="Rio_janeiro">Rio de Janeiro (RJ)</option>
+                            <option value="Rio_grande_norte">Rio Grande do Norte (RN)</option>
+                            <option value="Rio_Grande_sul">Rio Grande do Sul (RS)</option>
+                            <option value="Rondonia ">Rondônia (RO)</option>
+                            <option value="Roraima ">Roraima (RR)</option>
+                            <option value="Santa_catarina">Santa Catarina (SC)</option>
+                            <option value="Sao_paulo">São Paulo (SP)</option>
+                            <option value="Sergipe">Sergipe (SE)</option>
+                            <option value="Tocantins ">Tocantins (TO)</option>
+                        </select>
+                    </div>	
+                </div>
+
+                <div class="col-md-4">
+                                            
+                    <select name="sexo" class="ass3_2"  id="assunter4" required="required">
+
+                        <option value="" selected disabled>Sexo</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outros">Outros</option>
+                    </select>       
+                </div>  
+            </div>
+            <div> <p class="subrede2">Ao se cadastrar, ADICIONE o número +55 (71) 99177-8270 aos contatos.</p> </div>
+            <div> <p class="subrede2">Por favor, não esqueça de preencher o nome de usuário da rede social selecionada acima</p> </div>
+
+            <br>
+
+            <p class="envier"align="center">
+
+                <input type="submit" name="enviar" value="Enviar">
+            </p>                     
+        </div>
+    </section>
+</form>
+
+
+
+<section id="contato">
+    
+    <form class="forminho" name="formteste" action="php/contato.php" method="post" onsubmit="return confirmacao2()">
+
+    <h1 class="contatinho" align="center" >Contate-nos</h1>
+
+    <p class="nome" align="center">
+     <input id="assunter" type="text" name="con_name" placeholder="Nome Completo" required="required">
+     </p>
+
+    <p class="email" align="center">
+     <input id="assunter" type="email" name="con_email" placeholder="E-mail" required="required">
+     </p>
+
+    <p class="assunto" align="center">
+     <input id="assunter" type="text" name="con_assunto" placeholder="Motivo do contato" required="required">
+     </p>
+
+    <p class="mensagem" align="center">
+     <textarea class="mensager" name="con_mensagem" placeholder="Mensagem"></textarea>
+     </p>
+
+    <p class="enviar"align="center">
+     <input type="submit" name="bt_enviar" value="Enviar">
+     </p>
+
+    </form>
+
+</section>
+
+<section class="footer">   
+
+        <p class="footernelson">Desenvolvido por a <a class="linkfooter" href="http://www.praxisjr.com/">Praxis - Empresa Jr.</a> © 2018 Todos os direitos reservados | Maximos's Tecnologia LTDA </p>
+    
+</section>
+
+<script type="text/javascript">
+
+            jQuery(function ($) {
+                // init the state from the input
+                $(".image-checkbox").each(function () {
+                    if ($(this).find('input[type="checkbox"]').first().attr("checked")) {
+                        $(this).addClass('image-checkbox-checked');
+                    }
+                    else {
+                        $(this).removeClass('image-checkbox-checked');
+                    }
+                });
+
+                // sync the state to the input
+                $(".image-checkbox").on("click", function (e) {
+                    if ($(this).hasClass('image-checkbox-checked')) {
+                        $(this).removeClass('image-checkbox-checked');
+                        $(this).find('input[type="checkbox"]').first().removeAttr("checked");
+                    }
+                    else {
+                        $(this).addClass('image-checkbox-checked');
+                        $(this).find('input[type="checkbox"]').first().attr("checked", "checked");
+                    }
+
+                    e.preventDefault();
+                });
+            });
+
+
+                  
+</script>
+
+
+<!-- <script type="text/javascript">
+
+            jQuery(function ($) {
+                // init the state from the input
+                $(".image-radio").each(function () {
+                    if ($(this).find('input[type="radio"]').first().attr("checked")) {
+                        $(this).addClass('image-radio-checked');
+                    }
+                    else {
+                        $(this).removeClass('image-radio-checked');
+                    }
+                });
+
+                // sync the state to the input
+                $(".image-radio").on("click", function (e) {
+                    if ($(this).hasClass('image-radio-checked')) {
+                        $(this).removeClass('image-radio-checked');
+                        $(this).find('input[type="radio"]').first().removeAttr("checked");
+                    }
+                    else {
+                        $(this).addClass('image-radio-checked');
+                        $(this).find('input[type="radio"]').first().attr("checked", "checked");
+                    }
+
+                    e.preventDefault();
+                });
+            });
+
+
+                  
+</script> -->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.phone_with_ddd').mask('(99) 99999-9999');
+    })
+
+    function confirmacao(){
+        alert("Cadastro concluído")
+        return true
+
+    }  
+     function confirmacao2(){
+        alert("Obrigado por nos contatar")
+        return true
+
+    }  
+</script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+        $('.date').mask('99/99/9999');
+    })
+
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+
+
+
+</body>
+</html>
